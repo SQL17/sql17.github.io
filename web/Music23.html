@@ -1,0 +1,108 @@
+﻿<html>
+<head>
+	<title>Welcome to Music Hive</title>
+</head>
+<style>
+body{
+    background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+	background-image:url('Friend_God_By.bmp')
+}
+	.go-top {
+    	position: fixed;	        /* 设置fixed固定定位 */
+    	bottom: 8cm;		/* 距离浏览器窗口下边框20px */
+    	right: 30px;		/* 距离浏览器窗口右边框20px */
+  	}
+  	.go-top a {
+    	display: block;			/* 将<a>标签设为块元素，用于美化样式 */
+    	text-decoration: none;		/* 取消超链接下画线 */
+    	color: #333;			/* 设置文本颜色 */
+    	background-color: #f2f2f2;		/* 设置背景颜色 */
+    	border: 1px solid #ccc;		/* 设置边框样式 */
+    	padding: 10px 20px;			/* 设置内边距 */
+    	border-radius: 5px;			/* 设置圆角矩形 */
+    	letter-spacing: 2px;		/* 设置文字间距 */
+  	}
+		.go-BeforePage {
+    	position: fixed;	        /* 设置fixed固定定位 */
+    	bottom: 10cm;		/* 距离浏览器窗口下边框20px */
+    	right: 30px;		/* 距离浏览器窗口右边框20px */
+  	}
+  	.go-BeforePage a {
+    	display: block;			/* 将<a>标签设为块元素，用于美化样式 */
+    	text-decoration: none;		/* 取消超链接下画线 */
+    	color: #333;			/* 设置文本颜色 */
+    	background-color: #f2f2f2;		/* 设置背景颜色 */
+    	border: 1px solid #ccc;		/* 设置边框样式 */
+    	padding: 10px 20px;			/* 设置内边距 */
+    	border-radius: 5px;			/* 设置圆角矩形 */
+    	letter-spacing: 2px;		/* 设置文字间距 */
+  	}
+		.go-NextPage {
+    	position: fixed;	        /* 设置fixed固定定位 */
+    	bottom: 6cm;		/* 距离浏览器窗口下边框20px */
+    	right: 30px;		/* 距离浏览器窗口右边框20px */
+  	}
+  	.go-NextPage a {
+    	display: block;			/* 将<a>标签设为块元素，用于美化样式 */
+    	text-decoration: none;		/* 取消超链接下画线 */
+    	color: #333;			/* 设置文本颜色 */
+    	background-color: #f2f2f2;		/* 设置背景颜色 */
+    	border: 1px solid #ccc;		/* 设置边框样式 */
+    	padding: 10px 20px;			/* 设置内边距 */
+    	border-radius: 5px;			/* 设置圆角矩形 */
+    	letter-spacing: 2px;		/* 设置文字间距 */
+  	}
+</style>
+<body>
+<big><h1><font color="00FFFF"><p align="center">(^.\.^) Music ID 23：毕业季</p></font></h1></big>
+<font color="#38B0DE">
+<p align="center">不知不觉，</p>
+<p align="center">三年晃过，</p>
+<p align="center">昔日朋友，</p>
+<p align="center">何时再见？</p>
+<p align="center">不管当时多么不愉快，多么快乐，</p>
+<p align="center">只要过去了，</p>
+<p align="center">都会，成为美好的回忆。</p>
+</font>
+<p align="center">去更远的地方，见更亮的<span class="STYLE1"><font color="#D9D919"><Big>光</Big></font></span></p>
+<p align="center">愿：青春不散场，再见仍是少年</p>
+  <!-- 悬浮框结构 -->
+   <div class="go-BeforePage">
+    <a href="Music22.html" title="龙的传人">上一<br>首</a>
+  </div> 
+  <div class="go-top">
+    <a href="index.html" title="Welcome to Music Hive">返回<br>首页</a>
+  </div>
+    <div class="go-NextPage">
+    <a href="Music24.html" title="Caravan">下一<br>首</a>
+  </div>
+<script>
+if (navigator.userAgent.indexOf("Chrome") != -1){
+alert('因为Chrome游览器自动播放策略的变化，\r所以还请在网页加载好后,\r点击网页任意地方来触发事件监听器,\r以用于对音频的播放、暂停。\r如有问题，请联系SQL17@outlook.com\r管理员与2024/2/13日编辑')
+	document.write('<audio id="audio" src="./毕业季.mp3" loop="true" autoplay="True">');
+	        function playSound(){
+            var audio=document.getElementById("audio");
+            if(audio.paused) {  //如果音频是暂停状态
+                audio.load;     //加载音频文件
+                audio.play();	//播放
+            } else {
+			audio.pause();     //暂停
+			}
+}        //调用
+        window.onclick=function () {
+            playSound();
+        }
+} else {
+	document.write('<audio autoplay="autoplay" controls="controls"loop="loop" preload="auto" src="./毕业季.mp3" Hidden="Ture"></audio>');
+}
+document.onmouseup = function(e){
+return false
+}
+document.oncontextmenu = function(e){
+return false
+}
+</script>
+</body>
+</html>
